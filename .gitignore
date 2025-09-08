@@ -1,0 +1,108 @@
+# --- macOS (fichiers système) ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.metadata_never_index
+.apdisk
+
+# --- C / C++ : artefacts de compilation ---
+# Objets / libs
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.so
+*.dylib
+*.dll
+*.lib
+
+# Exécutables
+a.out
+*.out
+*.exe
+
+# En-têtes précompilés
+*.gch
+*.pch
+
+# Débogage
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Couverture / profilage
+*.gcno
+*.gcda
+*.gcov
+*.prof
+*.profraw
+
+# ccache
+.ccache/
+
+# Dossiers de build courants
+build/
+build-*/
+bin/
+obj/
+out/
+dist/
+Debug/
+Release/
+
+# --- Make / Autotools (générés) ---
+*.d
+*.depend
+*.mk
+Makefile.in
+/autom4te.cache
+/aclocal.m4
+/compile
+/config.guess
+/config.h
+/config.h.in
+/config.log
+/config.status
+/config.sub
+/configure
+/depcomp
+/install-sh
+/ltmain.sh
+/missing
+/stamp-h1
+/libtool
+
+# --- CMake (générés) ---
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+CMakeTmp/
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+_deps/
+# si tu buildes hors-source, ça suffit souvent :
+**/build*/
+
+# --- Xcode (si tu compiles du C avec Xcode) ---
+DerivedData/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.dSYM
+
+# --- Éditeurs (optionnel) ---
+# .vscode/
+# .idea/
+
