@@ -625,8 +625,7 @@ int main() {
 
 
   // Il n'est pas nécessaire de modifier ce qui suit
-  printf("La lumière parcourrait %.2f km en %d secondes
-", VITESSE_LUMIERE_KMPS * voyageDansTempsSecondes, voyageDansTempsSecondes) ;
+  printf("La lumière parcourrait %.2f km en %d secondes", VITESSE_LUMIERE_KMPS * voyageDansTempsSecondes, voyageDansTempsSecondes) ;
   return 0;
 }
 ```
