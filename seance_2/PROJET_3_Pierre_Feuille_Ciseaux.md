@@ -3,10 +3,6 @@
 
 Le club info t’a demandé un **mini‑jeu en console** pour animer une pause. Le joueur affronte l’ordinateur à *Pierre–Feuille–Ciseaux*. Pour cette activité, on vise **une seule manche** afin de se concentrer sur les **conditionnelles** :
 
-* accepter une entrée (`P`, `F` ou `C`, minuscules admises),
-* afficher clairement les deux choix,
-* annoncer le résultat avec une courte justification.
-  L’ordinateur choisit son coup **au hasard**. *(Les variantes « premier à 3 points », « quitter à tout moment » et affichage du score manche par manche viendront plus tard.)*
 
 ## Objectifs
 
