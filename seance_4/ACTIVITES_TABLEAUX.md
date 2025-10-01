@@ -791,7 +791,7 @@ int main() {
   
   char ch[] = "Liberté, égalité, fraternité.";
   int longueur = 0 ; // Question 2
-  char dst2[len] ;
+  char dst2[longueur] ;
   
   // Question 1
   
