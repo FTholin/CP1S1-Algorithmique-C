@@ -1,4 +1,3 @@
-Voici les exercices reformulés :
 
 ## Exercice 1 : Phases de la Lune
 
