@@ -1,3 +1,6 @@
+Parfait ! Voici l'examen complet avec cette approche :
+
+---
 
 ## Exercice 1 : Phases de la Lune
 
@@ -13,7 +16,13 @@ char obtenir_phase_lune(int jours);
 **Étapes :**
 1. **Normaliser les jours dans le cycle**
    - Ramenez n'importe quel nombre de jours dans un cycle de 30 jours
-   - Utilisez l'opération modulo avec 30
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Utilisez l'opération modulo avec 30
+    </p>
+    </details>
 
 2. **Diviser le cycle en phases**
    - Jours 0 à 5 : Nouvelle lune
@@ -23,8 +32,7 @@ char obtenir_phase_lune(int jours);
    - Jours 22 à 29 : Pleine lune
 
 3. **Structure conditionnelle**
-   - Testez chaque tranche de jours
-   - Retournez le caractère correspondant à chaque phase
+   - Testez chaque tranche de jours et retournez le caractère correspondant
 
 **Test :**
 ```c
@@ -52,9 +60,13 @@ int calculer_duree_arrosage(int temperature, int humidite_sol, char type_plante)
 
 **Étapes :**
 1. **Déterminer la durée de base selon le type de plante**
-   - Cactus nécessite 20 minutes de base
-   - Fleurs nécessitent 30 minutes
-   - Légumes nécessitent 40 minutes
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Cactus nécessite 20 minutes de base, Fleurs nécessitent 30 minutes, Légumes nécessitent 40 minutes
+    </p>
+    </details>
 
 2. **Ajuster selon la température**
    - Si température supérieure à 30 degrés : ajouter 10 minutes
@@ -101,32 +113,50 @@ double calculer_cout_total(int briques, double ciment, double sable);
 
 2. **Calculer le nombre de briques**
    - Comptez 60 briques par mètre carré
-   - Multipliez la surface par 60 et convertissez en entier
-   - Stockez le résultat via le pointeur briques
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Multipliez la surface par 60 et convertissez en entier, stockez le résultat via le pointeur briques
+    </p>
+    </details>
 
 3. **Calculer la quantité de ciment**
    - Comptez 15 kilogrammes par mètre carré
-   - Multipliez la surface par 15
-   - Stockez le résultat via le pointeur ciment_kg
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Multipliez la surface par 15, stockez le résultat via le pointeur ciment_kg
+    </p>
+    </details>
 
 4. **Calculer la quantité de sable**
    - Comptez 0.05 mètre cube par mètre carré
-   - Multipliez la surface par 0.05
-   - Stockez le résultat via le pointeur sable_m3
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Multipliez la surface par 0.05, stockez le résultat via le pointeur sable_m3
+    </p>
+    </details>
 
 **Étapes pour calculer_cout_total :**
 1. **Calculer le prix des briques**
    - Prix unitaire : 0.50 euros par brique
-   - Multipliez le nombre de briques par le prix unitaire
 
 2. **Calculer le prix du ciment**
    - Le ciment se vend en sacs de 25 kilogrammes à 8 euros le sac
-   - Divisez la quantité totale par 25 pour obtenir le nombre de sacs
-   - Multipliez par 8 pour obtenir le prix
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Divisez la quantité totale par 25 pour obtenir le nombre de sacs, multipliez par 8 pour obtenir le prix
+    </p>
+    </details>
 
 3. **Calculer le prix du sable**
    - Prix : 50 euros par mètre cube
-   - Multipliez la quantité par 50
 
 4. **Retourner le total**
    - Additionnez les trois prix et retournez la somme
@@ -164,7 +194,13 @@ void adapter_recette(int personnes_base, int personnes_voulues,
 **Étapes :**
 1. **Calculer le coefficient multiplicateur**
    - Divisez le nombre de personnes voulues par le nombre de personnes de base
-   - Convertissez en décimal pour obtenir un ratio précis
+
+<details>
+<summary>💡 Indice</summary>
+<p>
+Convertissez en décimal pour obtenir un ratio précis
+</p>
+</details>
 
 2. **Adapter les ingrédients en grammes**
    - Pour la farine : multipliez la quantité actuelle par le ratio calculé
@@ -173,8 +209,13 @@ void adapter_recette(int personnes_base, int personnes_voulues,
 
 3. **Adapter les oeufs**
    - Multipliez le nombre d'oeufs par le ratio
-   - Arrondissez à l'entier le plus proche en ajoutant 0.5 avant de convertir en entier
-   - Modifiez via le pointeur oeufs
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Arrondissez à l'entier le plus proche en ajoutant 0.5 avant de convertir en entier
+    </p>
+    </details>
 
 **Test :**
 ```c
@@ -213,25 +254,45 @@ void calculer_dilution(double volume_initial_ml, double concentration_initiale_p
 1. **Calculer la quantité de produit pur dans chaque solution**
    - Pour la solution 1 : multipliez le volume par la concentration, puis divisez par 100
    - Pour la solution 2 : faites de même
-   - Ces valeurs représentent le volume de produit pur dans chaque solution
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Ces valeurs représentent le volume de produit pur dans chaque solution
+    </p>
+    </details>
 
 2. **Calculer les totaux après mélange**
    - Volume total : additionnez les deux volumes
    - Produit pur total : additionnez les deux quantités de produit pur
 
 3. **Calculer la concentration du mélange**
-   - Divisez le produit pur total par le volume total
-   - Multipliez par 100 pour obtenir un pourcentage
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Divisez le produit pur total par le volume total, multipliez par 100 pour obtenir un pourcentage
+    </p>
+    </details>
 
 **Étapes pour calculer_dilution :**
 1. **Calculer la quantité de produit pur présente**
-   - Multipliez le volume initial par la concentration initiale
-   - Divisez par 100
-   - Cette quantité reste constante lors de la dilution
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Multipliez le volume initial par la concentration initiale, divisez par 100. Cette quantité reste constante lors de la dilution
+    </p>
+    </details>
 
 2. **Calculer le volume final nécessaire**
-   - Divisez la quantité de produit pur par la concentration voulue
-   - Multipliez par 100 pour corriger le pourcentage
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Divisez la quantité de produit pur par la concentration voulue, multipliez par 100 pour corriger le pourcentage
+    </p>
+    </details>
 
 3. **Calculer l'eau à ajouter**
    - Soustrayez le volume initial du volume final
@@ -271,25 +332,45 @@ void planifier_migration(double distance_km, int vitesse_kmh,
    - Soustrayez la longitude de départ de la longitude d'arrivée
 
 2. **Calculer la distance en degrés**
-   - Élevez chaque différence au carré
-   - Additionnez les deux carrés
-   - Prenez la racine carrée du résultat
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Élevez chaque différence au carré, additionnez les deux carrés, prenez la racine carrée du résultat
+    </p>
+    </details>
 
 3. **Convertir en kilomètres**
    - Multipliez la distance en degrés par 111
-   - Un degré de latitude ou longitude correspond approximativement à 111 kilomètres
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Un degré de latitude ou longitude correspond approximativement à 111 kilomètres
+    </p>
+    </details>
 
 **Étapes pour planifier_migration :**
 1. **Calculer le temps de vol total**
    - Divisez la distance par la vitesse pour obtenir le nombre d'heures total
 
 2. **Convertir en jours de vol**
-   - Divisez les heures totales par le nombre d'heures de vol par jour
-   - Gardez seulement la partie entière pour le nombre de jours
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Divisez les heures totales par le nombre d'heures de vol par jour, gardez seulement la partie entière pour le nombre de jours
+    </p>
+    </details>
 
 3. **Calculer les heures restantes**
-   - Utilisez le modulo pour obtenir le reste d'heures après avoir retiré les jours complets
-   - Stockez les résultats via les pointeurs
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Utilisez le modulo pour obtenir le reste d'heures après avoir retiré les jours complets, stockez les résultats via les pointeurs
+    </p>
+    </details>
 
 **Test :**
 ```c
@@ -324,10 +405,13 @@ int calculer_temps_cuisson_eau(int altitude_m);
    - Utilisez la valeur de référence de 1013.25 hectopascals
 
 2. **Appliquer la formule barométrique**
-   - Divisez l'altitude par 8000
-   - Prenez l'opposé de ce résultat
-   - Calculez l'exponentielle de cette valeur
-   - Multipliez par la pression au niveau de la mer
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Divisez l'altitude par 8000, prenez l'opposé de ce résultat, calculez l'exponentielle de cette valeur, multipliez par la pression au niveau de la mer
+    </p>
+    </details>
 
 **Étapes pour calculer_temps_cuisson_eau :**
 1. **Obtenir la pression à cette altitude**
@@ -335,11 +419,22 @@ int calculer_temps_cuisson_eau(int altitude_m);
 
 2. **Calculer le ratio de pression**
    - Divisez la pression au niveau de la mer (1013.25) par la pression obtenue
-   - Ce ratio indique l'augmentation du temps de cuisson
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Ce ratio indique l'augmentation du temps de cuisson
+    </p>
+    </details>
 
 3. **Ajuster le temps de cuisson**
-   - Multipliez 10 minutes (temps de base) par le ratio
-   - Convertissez le résultat en entier
+
+    <details>
+    <summary>💡 Indice</summary>
+    <p>
+    Multipliez 10 minutes (temps de base) par le ratio, convertissez le résultat en entier
+    </p>
+    </details>
 
 **Test :**
 ```c
