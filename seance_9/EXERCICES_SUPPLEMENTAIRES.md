@@ -1,6 +1,4 @@
-Parfait ! Voici l'examen complet avec cette approche :
 
----
 
 ## Exercice 1 : Phases de la Lune
 
