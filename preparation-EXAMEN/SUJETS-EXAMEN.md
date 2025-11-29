@@ -75,7 +75,7 @@ int main() {
 ```
 Distance entre livraison 0 et 1 : 9
 Plus long trajet : 11
-Nombre de trajets courts : 1
+Nombre de trajets courts : 2
 ```
 
 
@@ -323,7 +323,7 @@ int main() {
 ```
 Total periode 0 : 60 vehicules
 Periode la plus chargee : 3
-Pourcentage de motos : 22.6%
+Pourcentage de motos : 22.7%
 ```
 
 
