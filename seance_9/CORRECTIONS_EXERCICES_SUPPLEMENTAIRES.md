@@ -1,3 +1,5 @@
+
+```c
 #include <stdio.h>
 #include <math.h>  // Pour sqrt() et pow()
 
@@ -313,4 +315,5 @@ int main() {
     }
     
     return 0;
-}
+
+}```
